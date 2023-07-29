@@ -1,0 +1,39 @@
+$date
+	Sat Jul 29 04:54:39 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module adder_tb $end
+$var wire 1 ! COUT $end
+$var wire 1 " SUm $end
+$var wire 9 # r [8:0] $end
+$var reg 1 $ c_in $end
+$var reg 8 % t_a [7:0] $end
+$var reg 8 & t_b [7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 &
+b1 %
+0$
+b101 #
+1"
+0!
+$end
+#5
+0"
+1$
+b10 &
+b111 %
+b1010 #
+#10
+1"
+0$
+b1000 &
+b1111 #
+#15

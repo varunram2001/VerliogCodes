@@ -1,0 +1,72 @@
+#! /usr/share/iverilog-0.9.7/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_6)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xe3f510 .scope module, "adder_tb" "adder_tb" 2 3;
+ .timescale 0 0;
+v0xe74ac0_0 .net "COUT", 0 0, L_0xe75780; 1 drivers
+v0xe74b60_0 .net "SUm", 0 0, L_0xe75900; 1 drivers
+v0xe74be0_0 .var "c_in", 0 0;
+v0xe74c90_0 .net "r", 8 0, L_0xe75510; 1 drivers
+v0xe74d70_0 .var "t_a", 7 0;
+v0xe74e20_0 .var "t_b", 7 0;
+L_0xe75900 .part L_0xe756a0, 0, 1;
+S_0xe3f320 .scope module, "dut" "adder" 2 10, 3 2, S_0xe3f510;
+ .timescale 0 0;
+v0xe3ead0_0 .net *"_s0", 8 0, L_0xe74ea0; 1 drivers
+v0xe741d0_0 .net *"_s10", 8 0, L_0xe75390; 1 drivers
+v0xe74270_0 .net *"_s13", 7 0, C4<00000000>; 1 drivers
+v0xe74310_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v0xe743c0_0 .net *"_s4", 8 0, L_0xe75000; 1 drivers
+v0xe74460_0 .net *"_s7", 0 0, C4<0>; 1 drivers
+v0xe74540_0 .net *"_s8", 8 0, L_0xe75180; 1 drivers
+v0xe745e0_0 .net "a", 7 0, v0xe74d70_0; 1 drivers
+v0xe746d0_0 .net "b", 7 0, v0xe74e20_0; 1 drivers
+v0xe74770_0 .net "cin", 0 0, v0xe74be0_0; 1 drivers
+v0xe74870_0 .alias "cout", 0 0, v0xe74ac0_0;
+v0xe74910_0 .alias "result", 8 0, v0xe74c90_0;
+v0xe74a20_0 .net "sum", 7 0, L_0xe756a0; 1 drivers
+L_0xe74ea0 .concat [ 8 1 0 0], v0xe74d70_0, C4<0>;
+L_0xe75000 .concat [ 8 1 0 0], v0xe74e20_0, C4<0>;
+L_0xe75180 .arith/sum 9, L_0xe74ea0, L_0xe75000;
+L_0xe75390 .concat [ 1 8 0 0], v0xe74be0_0, C4<00000000>;
+L_0xe75510 .arith/sum 9, L_0xe75180, L_0xe75390;
+L_0xe756a0 .part L_0xe75510, 0, 8;
+L_0xe75780 .part L_0xe75510, 8, 1;
+    .scope S_0xe3f510;
+T_0 ;
+    %vpi_call 2 13 "$dumpfile", "dump.vcd";
+    %vpi_call 2 14 "$dumpvars", 2'sb01;
+    %end;
+    .thread T_0;
+    .scope S_0xe3f510;
+T_1 ;
+    %movi 8, 1, 8;
+    %set/v v0xe74d70_0, 8, 8;
+    %movi 8, 4, 8;
+    %set/v v0xe74e20_0, 8, 8;
+    %set/v v0xe74be0_0, 0, 1;
+    %delay 5, 0;
+    %movi 8, 7, 8;
+    %set/v v0xe74d70_0, 8, 8;
+    %movi 8, 2, 8;
+    %set/v v0xe74e20_0, 8, 8;
+    %set/v v0xe74be0_0, 1, 1;
+    %delay 5, 0;
+    %movi 8, 7, 8;
+    %set/v v0xe74d70_0, 8, 8;
+    %movi 8, 8, 8;
+    %set/v v0xe74e20_0, 8, 8;
+    %set/v v0xe74be0_0, 0, 1;
+    %delay 5, 0;
+    %vpi_call 2 33 "$finish";
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.sv";
+    "design.sv";
