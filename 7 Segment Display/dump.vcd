@@ -1,0 +1,79 @@
+$date
+Wed Aug  2 08:57:33 2023
+$end
+$version
+Riviera-PRO Version 2022.04.117.8517
+$end
+$timescale
+1 ns
+$end
+
+$scope module tb_segment7 $end
+$var wire 7 ! seg [6:0] $end
+$var reg 4 " bcd [3:0] $end
+$var integer 32 # i $end
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1 !
+b0 "
+b0 #
+$end
+#10
+b1 #
+b1 "
+b1001111 !
+#20
+b10 #
+b10 "
+b10010 !
+#30
+b11 #
+b11 "
+b110 !
+#40
+b100 #
+b100 "
+b1001100 !
+#50
+b101 #
+b101 "
+b100100 !
+#60
+b110 #
+b110 "
+b100000 !
+#70
+b111 #
+b111 "
+b1111 !
+#80
+b1000 #
+b1000 "
+b0 !
+#90
+b1001 #
+b1001 "
+b100 !
+#100
+b1010 #
+b1010 "
+b1111111 !
+#110
+b1011 #
+b1011 "
+#120
+b1100 #
+b1100 "
+#130
+b1101 #
+b1101 "
+#140
+b1110 #
+b1110 "
+#150
+b1111 #
+b1111 "
+#160
+b10000 #
