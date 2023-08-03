@@ -1,0 +1,75 @@
+$date
+Thu Aug  3 12:35:46 2023
+$end
+$version
+Riviera-PRO Version 2022.04.117.8517
+$end
+$timescale
+1 ns
+$end
+
+$scope module tb_mux $end
+$var wire 1 ! y $end
+$var reg 8 " in [7:0] $end
+$var reg 3 # s [2:0] $end
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+b10110110 "
+b0 #
+$end
+#10
+b1 #
+1!
+#20
+b10 #
+#30
+b11 #
+0!
+#40
+b100 #
+1!
+#50
+b101 #
+#60
+b110 #
+0!
+#70
+b111 #
+1!
+#80
+b0 #
+0!
+#90
+b1 #
+1!
+#100
+b10 #
+#110
+b11 #
+0!
+#120
+b100 #
+1!
+#130
+b101 #
+#140
+b110 #
+0!
+#150
+b111 #
+1!
+#160
+b0 #
+0!
+#170
+b1 #
+1!
+#180
+b10 #
+#190
+b11 #
+0!
+#200
