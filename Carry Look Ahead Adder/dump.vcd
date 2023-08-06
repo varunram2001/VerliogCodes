@@ -1,0 +1,70 @@
+$date
+	Sun Aug  6 03:59:38 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module jcarrylookaheadaddertb $end
+$var wire 4 ! Y [3:0] $end
+$var wire 1 " carryout $end
+$var reg 4 # A [3:0] $end
+$var reg 4 $ B [3:0] $end
+$var reg 1 % carryin $end
+$scope module jcla $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var wire 4 ( Y [3:0] $end
+$var wire 5 ) c [4:0] $end
+$var wire 1 * carryin $end
+$var wire 1 " carryout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0*
+b0 )
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+b0 #
+0"
+b0 !
+$end
+#50
+b110 !
+b110 (
+1%
+b111 )
+1*
+b10 $
+b10 '
+b11 #
+b11 &
+#100
+1"
+b1 !
+b1 (
+0%
+b11100 )
+0*
+b1010 $
+b1010 '
+b111 #
+b111 &
+#150
+b1111 !
+b1111 (
+1%
+b11111 )
+1*
+b1111 $
+b1111 '
+b1111 #
+b1111 &
+#200
