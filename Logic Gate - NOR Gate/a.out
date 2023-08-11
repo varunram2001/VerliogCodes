@@ -1,0 +1,42 @@
+#! /usr/share/iverilog-0.9.7/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_6)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xb8dad0 .scope module, "nor_gate_tb" "nor_gate_tb" 2 2;
+ .timescale 0 0;
+v0xb9d750_0 .var "a", 0 0;
+v0xb9d820_0 .var "b", 0 0;
+v0xb9d8d0_0 .net "y", 0 0, L_0xb9d980; 1 drivers
+S_0xb8dbc0 .scope module, "uut" "nor_gate_s" 2 6, 3 2, S_0xb8dad0;
+ .timescale 0 0;
+L_0xb9d980 .functor NOR 1, v0xb9d750_0, v0xb9d820_0, C4<0>, C4<0>;
+v0xb6b200_0 .net "a", 0 0, v0xb9d750_0; 1 drivers
+v0xb9d610_0 .net "b", 0 0, v0xb9d820_0; 1 drivers
+v0xb9d6b0_0 .alias "y", 0 0, v0xb9d8d0_0;
+    .scope S_0xb8dad0;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "dump.vcd";
+    %vpi_call 2 10 "$dumpvars", 2'sb01;
+    %set/v v0xb9d750_0, 0, 1;
+    %set/v v0xb9d820_0, 0, 1;
+    %delay 10, 0;
+    %set/v v0xb9d820_0, 0, 1;
+    %set/v v0xb9d820_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0xb9d750_0, 1, 1;
+    %set/v v0xb9d820_0, 0, 1;
+    %delay 10, 0;
+    %set/v v0xb9d820_0, 1, 1;
+    %set/v v0xb9d820_0, 1, 1;
+    %delay 10, 0;
+    %vpi_call 2 19 "$finish";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.sv";
+    "design.sv";
