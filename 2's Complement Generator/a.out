@@ -1,0 +1,49 @@
+#! /usr/share/iverilog-0.9.7/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_6)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xc59dd0 .scope module, "tb_twos_complement_generator" "tb_twos_complement_generator" 2 1;
+ .timescale 0 0;
+v0xc69c20_0 .var "input_number", 7 0;
+v0xc69cf0_0 .net "twos_complement_output", 7 0, v0xc69b80_0; 1 drivers
+S_0xc59ec0 .scope module, "uut" "twos_complement_generator" 2 7, 3 1, S_0xc59dd0;
+ .timescale 0 0;
+v0xc37470_0 .net "input_number", 7 0, v0xc69c20_0; 1 drivers
+v0xc69b80_0 .var "twos_complement_output", 7 0;
+E_0xc35ef0 .event edge, v0xc37470_0;
+    .scope S_0xc59ec0;
+T_0 ;
+    %wait E_0xc35ef0;
+    %load/v 8, v0xc37470_0, 8;
+    %mov 16, 0, 24;
+    %inv 8, 32;
+    %addi 8, 1, 32;
+    %set/v v0xc69b80_0, 8, 8;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_0xc59dd0;
+T_1 ;
+    %vpi_call 2 14 "$monitor", "Input: %d, 2's Complement Output: %d", v0xc69c20_0, v0xc69cf0_0;
+    %vpi_call 2 15 "$dumpfile", "dump.vcd";
+    %vpi_call 2 16 "$dumpvars", 2'sb01;
+    %set/v v0xc69c20_0, 0, 8;
+    %delay 10, 0;
+    %movi 8, 11, 8;
+    %set/v v0xc69c20_0, 8, 8;
+    %delay 10, 0;
+    %set/v v0xc69c20_0, 1, 8;
+    %delay 10, 0;
+    %movi 8, 213, 8;
+    %set/v v0xc69c20_0, 8, 8;
+    %delay 10, 0;
+    %vpi_call 2 30 "$finish";
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.sv";
+    "design.sv";
