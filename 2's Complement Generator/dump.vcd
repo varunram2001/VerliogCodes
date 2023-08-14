@@ -1,0 +1,29 @@
+$date
+	Sun Aug 13 13:47:28 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_twos_complement_generator $end
+$var wire 8 ! twos_complement_output [7:0] $end
+$var reg 8 " input_number [7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b0 !
+$end
+#10
+b11110101 !
+b1011 "
+#20
+b1 !
+b11111111 "
+#30
+b101011 !
+b11010101 "
+#40
