@@ -1,0 +1,52 @@
+$date
+	Tue Aug 15 04:22:00 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 1 ! y0 $end
+$var wire 1 " y1 $end
+$var wire 1 # y2 $end
+$var wire 1 $ y3 $end
+$var reg 1 % i $end
+$var reg 2 & sel [1:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+0%
+0$
+0#
+0"
+0!
+$end
+#1
+1!
+1%
+#2
+0!
+0%
+b1 &
+#3
+1"
+1%
+#4
+0"
+0%
+b10 &
+#5
+1#
+1%
+#6
+0#
+0%
+b11 &
+#7
+1$
+1%
+#8
