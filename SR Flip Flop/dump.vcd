@@ -1,0 +1,77 @@
+$date
+	Fri Sep  1 14:54:09 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_sr_flip_flop $end
+$var wire 1 ! Q_tb $end
+$var wire 1 " Qn_tb $end
+$var reg 1 # CLK_tb $end
+$var reg 1 $ R_tb $end
+$var reg 1 % S_tb $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+0$
+0#
+x"
+x!
+$end
+#5
+1#
+#10
+0"
+1!
+0#
+1%
+#15
+1#
+#20
+1"
+0!
+0#
+1$
+0%
+#25
+1#
+#30
+0#
+0$
+#35
+1#
+#40
+0"
+1!
+0#
+1$
+1%
+#45
+1#
+#50
+0#
+0$
+0%
+#55
+1#
+#60
+0#
+1%
+#65
+1#
+#70
+1"
+0!
+0#
+1$
+0%
+#75
+1#
+#80
+0#
+0$
