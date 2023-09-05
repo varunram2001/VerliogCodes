@@ -1,0 +1,62 @@
+#! /usr/share/iverilog-0.9.7/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_6)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x1a05010 .scope module, "testbench" "testbench" 2 1;
+ .timescale 0 0;
+v0x1a164d0_0 .net "Q", 0 0, v0x1a162e0_0; 1 drivers
+v0x1a165a0_0 .var "T", 0 0;
+v0x1a16650_0 .var "clk", 0 0;
+S_0x1a05100 .scope module, "uut" "t_flip_flop" 2 7, 3 1, S_0x1a05010;
+ .timescale 0 0;
+v0x1a04320_0 .alias "Q", 0 0, v0x1a164d0_0;
+v0x1a162e0_0 .var "Q_next", 0 0;
+v0x1a16380_0 .net "T", 0 0, v0x1a165a0_0; 1 drivers
+v0x1a16420_0 .net "clk", 0 0, v0x1a16650_0; 1 drivers
+E_0x19e16b0 .event posedge, v0x1a16420_0;
+    .scope S_0x1a05100;
+T_0 ;
+    %wait E_0x19e16b0;
+    %load/v 8, v0x1a16380_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %load/v 8, v0x1a162e0_0, 1;
+    %inv 8, 1;
+    %ix/load 0, 1, 0;
+    %assign/v0 v0x1a162e0_0, 0, 8;
+T_0.0 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x1a05010;
+T_1 ;
+    %vpi_call 2 14 "$display", "Testing T Flip-Flop";
+    %vpi_call 2 15 "$dumpfile", "dump.vcd";
+    %vpi_call 2 16 "$dumpvars", 2'sb01;
+    %set/v v0x1a165a0_0, 0, 1;
+    %set/v v0x1a16650_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0x1a165a0_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0x1a16650_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0x1a16650_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0x1a16650_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0x1a16650_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0x1a165a0_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0x1a16650_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0x1a16650_0, 0, 1;
+    %vpi_call 2 33 "$finish";
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.sv";
+    "design.sv";
