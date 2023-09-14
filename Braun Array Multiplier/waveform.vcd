@@ -1,0 +1,45 @@
+$date
+Thu Sep 14 16:18:20 2023
+$end
+$version
+Riviera-PRO Version 2022.04.117.8517
+$end
+$timescale
+1 ns
+$end
+
+$scope module testbench $end
+$var wire 8 ! P [7:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+
+$scope module uut $end
+$var wire 4 $ A [3:0] $end
+$var wire 4 % B [3:0] $end
+$var reg 8 & P [7:0] $end
+$var integer 32 ' i $end
+$var integer 32 ( j $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1010 !
+b10 "
+b101 #
+b10 $
+b101 %
+b1010 &
+b100 '
+b100 (
+$end
+#10
+b110 "
+b110 $
+b100 '
+b100 (
+b11110 &
+b11110 !
+#20
+b1010 #
