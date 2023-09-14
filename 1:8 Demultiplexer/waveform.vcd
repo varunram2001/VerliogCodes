@@ -1,0 +1,57 @@
+$date
+	Thu Sep 14 14:19:17 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 8 ! Y [7:0] $end
+$var reg 1 " D $end
+$var reg 3 # S [2:0] $end
+$scope module uut $end
+$var wire 1 $ D $end
+$var wire 3 % S [2:0] $end
+$var reg 8 & Y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+0$
+b0 #
+0"
+b0 !
+$end
+#5
+b10 &
+b10 !
+b1 #
+b1 %
+1"
+1$
+#10
+b0 &
+b0 !
+b10 #
+b10 %
+0"
+0$
+#15
+b10000 &
+b10000 !
+b100 #
+b100 %
+1"
+1$
+#20
+b0 &
+b0 !
+b111 #
+b111 %
+0"
+0$
