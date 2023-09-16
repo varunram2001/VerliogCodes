@@ -1,0 +1,33 @@
+$date
+Sat Sep 16 00:10:05 2023
+$end
+$version
+Riviera-PRO Version 2022.04.117.8517
+$end
+$timescale
+1 ns
+$end
+
+$scope module testbench_demux_1to16 $end
+$var wire 16 ! dout [15:0] $end
+$var reg 4 " sel [3:0] $end
+$var reg 1 # din $end
+
+$scope module uut $end
+$var wire 4 $ sel [3:0] $end
+$var wire 1 % din $end
+$var reg 16 & dout [15:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b10 !
+b1 "
+1#
+b1 $
+1%
+b10 &
+$end
+#10
