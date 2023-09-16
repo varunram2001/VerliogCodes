@@ -1,0 +1,50 @@
+$date
+	Sat Sep 16 20:05:00 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 1 ! CARRY $end
+$var wire 1 " SUM $end
+$var reg 1 # A $end
+$var reg 1 $ B $end
+$scope module uut $end
+$var wire 1 % A $end
+$var wire 1 & B $end
+$var reg 1 ' CARRY $end
+$var reg 1 ( SUM $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1(
+1"
+1$
+1&
+#10
+0$
+0&
+1#
+1%
+#15
+1'
+1!
+0(
+0"
+1$
+1&
