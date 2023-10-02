@@ -1,0 +1,25 @@
+$date
+	Mon Oct  2 04:01:14 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_bcd_to_7seg_decoder $end
+$var wire 7 ! seven_segment_output [6:0] $end
+$var reg 4 " bcd_input [3:0] $end
+$scope module uut $end
+$var wire 4 # bcd_input [3:0] $end
+$var reg 7 $ seven_segment_output [6:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000000 $
+b0 #
+b0 "
+b1000000 !
+$end
