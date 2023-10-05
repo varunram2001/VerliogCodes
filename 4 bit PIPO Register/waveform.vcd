@@ -1,0 +1,79 @@
+$date
+Thu Oct  5 05:47:32 2023
+$end
+$version
+Riviera-PRO Version 2022.04.117.8517
+$end
+$timescale
+1 ns
+$end
+
+$scope module tb_pipo_register $end
+$var wire 4 ! data_out [3:0] $end
+$var reg 4 " data_in [3:0] $end
+$var reg 1 # clock $end
+$var reg 1 $ load $end
+
+$scope module uut $end
+$var wire 4 % data_in [3:0] $end
+$var wire 1 & clock $end
+$var wire 1 ' load $end
+$var reg 4 ( data_out [3:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+bx !
+b0 "
+0#
+0$
+b0 %
+0&
+0'
+bx (
+$end
+#5
+1$
+1'
+#10
+0$
+b1010 "
+b1010 %
+0'
+#15
+1$
+1'
+#20
+0$
+0'
+#25
+1#
+1&
+#30
+0#
+0&
+#35
+1#
+1&
+#40
+0#
+0&
+#45
+1#
+1&
+#50
+0#
+0&
+#55
+1#
+1&
+#60
+0#
+0&
+#65
+1#
+1&
+#70
+0#
