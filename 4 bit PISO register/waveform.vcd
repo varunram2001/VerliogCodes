@@ -1,0 +1,89 @@
+$date
+	Tue Oct 10 05:33:46 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_piso_register $end
+$var wire 1 ! serial_out $end
+$var reg 1 " clock $end
+$var reg 4 # parallel_in [3:0] $end
+$var reg 1 $ shift $end
+$scope module uut $end
+$var wire 1 % clock $end
+$var wire 4 & parallel_in [3:0] $end
+$var wire 1 ' shift $end
+$var reg 1 ( serial_out $end
+$var reg 4 ) shift_reg [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx )
+x(
+0'
+b0 &
+0%
+0$
+b0 #
+0"
+x!
+$end
+#5
+b1010 #
+b1010 &
+#10
+1$
+1'
+#15
+0$
+0'
+#20
+1$
+1'
+#25
+0$
+0'
+#30
+1$
+1'
+#35
+bx0 )
+1"
+1%
+#40
+0"
+0%
+#45
+bx00 )
+1"
+1%
+#50
+0"
+0%
+#55
+bx000 )
+1"
+1%
+#60
+0"
+0%
+#65
+b0 )
+1"
+1%
+#70
+0"
+0%
+#75
+0(
+0!
+1"
+1%
+#80
+0"
+0%
