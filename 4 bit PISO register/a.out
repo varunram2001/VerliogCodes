@@ -1,0 +1,90 @@
+#! /usr/share/iverilog-0.9.7/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_6)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xd61d70 .scope module, "tb_piso_register" "tb_piso_register" 2 1;
+ .timescale 0 0;
+v0xd73ab0_0 .var "clock", 0 0;
+v0xd73b80_0 .var "parallel_in", 3 0;
+v0xd73c30_0 .net "serial_out", 0 0, v0xd738d0_0; 1 drivers
+v0xd73ce0_0 .var "shift", 0 0;
+S_0xd61e60 .scope module, "uut" "piso_register" 2 8, 3 1, S_0xd61d70;
+ .timescale 0 0;
+v0xd61f50_0 .net "clock", 0 0, v0xd73ab0_0; 1 drivers
+v0xd73830_0 .net "parallel_in", 3 0, v0xd73b80_0; 1 drivers
+v0xd738d0_0 .var "serial_out", 0 0;
+v0xd73970_0 .net "shift", 0 0, v0xd73ce0_0; 1 drivers
+v0xd73a10_0 .var "shift_reg", 3 0;
+E_0xd3dc50 .event posedge, v0xd61f50_0;
+    .scope S_0xd61e60;
+T_0 ;
+    %wait E_0xd3dc50;
+    %load/v 8, v0xd73970_0, 1;
+    %jmp/0xz  T_0.0, 8;
+    %load/v 8, v0xd73830_0, 1; Select 1 out of 4 bits
+    %load/v 9, v0xd73a10_0, 3; Select 3 out of 4 bits
+    %ix/load 0, 4, 0;
+    %assign/v0 v0xd73a10_0, 0, 8;
+T_0.0 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0xd61e60;
+T_1 ;
+    %wait E_0xd3dc50;
+    %load/v 8, v0xd73970_0, 1;
+    %jmp/0xz  T_1.0, 8;
+    %ix/load 1, 3, 0;
+    %mov 4, 0, 1;
+    %jmp/1 T_1.2, 4;
+    %load/x1p 8, v0xd73a10_0, 1;
+    %jmp T_1.3;
+T_1.2 ;
+    %mov 8, 2, 1;
+T_1.3 ;
+; Save base=8 wid=1 in lookaside.
+    %ix/load 0, 1, 0;
+    %assign/v0 v0xd738d0_0, 0, 8;
+T_1.0 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0xd61d70;
+T_2 ;
+    %vpi_call 2 17 "$dumpfile", "waveform.vcd";
+    %vpi_call 2 18 "$dumpvars", 1'sb0, S_0xd61d70;
+    %set/v v0xd73b80_0, 0, 4;
+    %set/v v0xd73ab0_0, 0, 1;
+    %set/v v0xd73ce0_0, 0, 1;
+    %delay 5, 0;
+    %movi 8, 10, 4;
+    %set/v v0xd73b80_0, 8, 4;
+    %delay 5, 0;
+    %set/v v0xd73ce0_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0xd73ce0_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0xd73ce0_0, 1, 1;
+    %delay 5, 0;
+    %set/v v0xd73ce0_0, 0, 1;
+    %delay 5, 0;
+    %set/v v0xd73ce0_0, 1, 1;
+    %movi 8, 10, 5;
+T_2.0 %cmp/s 0, 8, 5;
+    %jmp/0xz T_2.1, 5;
+    %add 8, 1, 5;
+    %delay 5, 0;
+    %load/v 13, v0xd73ab0_0, 1;
+    %inv 13, 1;
+    %set/v v0xd73ab0_0, 13, 1;
+    %jmp T_2.0;
+T_2.1 ;
+    %vpi_call 2 39 "$finish";
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "testbench.sv";
+    "design.sv";
