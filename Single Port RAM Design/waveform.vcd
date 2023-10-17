@@ -1,0 +1,45 @@
+$date
+	Tue Oct 17 14:29:13 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_single_port_ram $end
+$var wire 8 ! data_out [7:0] $end
+$var reg 4 " address [3:0] $end
+$var reg 8 # data_in [7:0] $end
+$var reg 1 $ write_enable $end
+$scope module uut $end
+$var wire 4 % address [3:0] $end
+$var wire 8 & data_in [7:0] $end
+$var wire 1 ' write_enable $end
+$var reg 8 ( data_out [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+0'
+b0 &
+b0 %
+0$
+b0 #
+b0 "
+bx !
+$end
+#5
+b10101010 (
+b10101010 !
+b10 "
+b10 %
+b10101010 #
+b10101010 &
+1$
+1'
+#10
+0$
+0'
