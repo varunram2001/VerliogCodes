@@ -1,0 +1,73 @@
+$date
+	Wed Oct 18 08:21:47 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_dual_port_ram $end
+$var wire 8 ! data_out_a [7:0] $end
+$var wire 8 " data_out_b [7:0] $end
+$var reg 4 # address_a [3:0] $end
+$var reg 4 $ address_b [3:0] $end
+$var reg 8 % data_in_a [7:0] $end
+$var reg 8 & data_in_b [7:0] $end
+$var reg 1 ' write_enable_a $end
+$var reg 1 ( write_enable_b $end
+$scope module uut $end
+$var wire 4 ) address_a [3:0] $end
+$var wire 4 * address_b [3:0] $end
+$var wire 8 + data_in_a [7:0] $end
+$var wire 8 , data_in_b [7:0] $end
+$var wire 1 - write_enable_a $end
+$var wire 1 . write_enable_b $end
+$var reg 8 / data_out_a [7:0] $end
+$var reg 8 0 data_out_b [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 0
+bx /
+0.
+0-
+b11111111 ,
+b0 +
+b1 *
+b0 )
+0(
+0'
+b11111111 &
+b0 %
+b1 $
+b0 #
+bx "
+bx !
+$end
+#5
+b10101010 /
+b10101010 !
+b10 #
+b10 )
+b10101010 %
+b10101010 +
+1'
+1-
+#10
+b1010101 0
+b1010101 "
+b11 $
+b11 *
+b1010101 &
+b1010101 ,
+1(
+1.
+#15
+0'
+0-
+#20
+0(
+0.
