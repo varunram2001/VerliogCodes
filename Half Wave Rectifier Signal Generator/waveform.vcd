@@ -1,0 +1,70 @@
+$date
+	Thu Oct 19 05:44:22 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_half_wave_rectifier $end
+$var wire 8 ! rectified_wave [7:0] $end
+$var reg 1 " clk $end
+$var reg 8 # sine_wave [7:0] $end
+$scope module uut $end
+$var wire 1 $ clk $end
+$var wire 8 % sine_wave [7:0] $end
+$var reg 8 & rectified_wave [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx &
+b0 %
+0$
+b0 #
+0"
+bx !
+$end
+#5
+b1010101 #
+b1010101 %
+#10
+b11011011 #
+b11011011 %
+#15
+b0 #
+b0 %
+#20
+b0 &
+b0 !
+1"
+1$
+#25
+0"
+0$
+#30
+1"
+1$
+#35
+0"
+0$
+#40
+1"
+1$
+#45
+0"
+0$
+#50
+1"
+1$
+#55
+0"
+0$
+#60
+1"
+1$
+#65
+0"
+0$
