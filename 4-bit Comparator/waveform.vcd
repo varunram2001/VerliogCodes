@@ -1,0 +1,58 @@
+$date
+	Wed Oct 25 13:20:59 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_four_bit_comparator $end
+$var wire 1 ! EQ $end
+$var wire 1 " GT $end
+$var wire 1 # LT $end
+$var reg 4 $ A [3:0] $end
+$var reg 4 % B [3:0] $end
+$scope module uut $end
+$var wire 4 & A [3:0] $end
+$var wire 4 ' B [3:0] $end
+$var reg 1 ( EQ $end
+$var reg 1 ) GT $end
+$var reg 1 * LT $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0*
+0)
+1(
+b0 '
+b0 &
+b0 %
+b0 $
+0#
+0"
+1!
+$end
+#5
+b101 %
+b101 '
+b101 $
+b101 &
+#10
+1)
+1"
+0(
+0!
+b10 %
+b10 '
+#15
+1*
+1#
+0)
+0"
+b101 %
+b101 '
+b10 $
+b10 &
