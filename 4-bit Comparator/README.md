@@ -1,1 +1,1 @@
-
+![image](https://github.com/varunram2001/VerliogCodes/assets/80676450/e9a2d2cb-aa8c-465c-8c31-d540423ac0fd)![image](https://github.com/varunram2001/VerliogCodes/assets/80676450/ba26ca6f-b4e2-4f4b-859e-41316421cd42)
