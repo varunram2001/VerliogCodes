@@ -1,0 +1,40 @@
+$date
+	Sun Nov 12 05:15:42 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_nines_complement_generator $end
+$var wire 4 ! nines_complement [3:0] $end
+$var reg 4 " input_number [3:0] $end
+$scope module uut $end
+$var wire 4 # input_number [3:0] $end
+$var reg 4 $ nines_complement [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1001 $
+b0 #
+b0 "
+b1001 !
+$end
+#5
+b1111 $
+b1111 !
+b1010 "
+b1010 #
+#10
+b11 $
+b11 !
+b110 "
+b110 #
+#15
+b1100 $
+b1100 !
+b1101 "
+b1101 #
