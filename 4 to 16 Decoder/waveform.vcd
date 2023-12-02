@@ -1,0 +1,40 @@
+$date
+	Fri Dec  1 19:01:46 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_decoder_4to16 $end
+$var wire 16 ! output_bits [15:0] $end
+$var reg 4 " input_bits [3:0] $end
+$scope module uut $end
+$var wire 4 # input_bits [3:0] $end
+$var reg 16 $ output_bits [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 $
+b0 #
+b0 "
+b1 !
+$end
+#5
+b1000000 $
+b1000000 !
+b110 "
+b110 #
+#10
+b100000000000 $
+b100000000000 !
+b1011 "
+b1011 #
+#15
+b10000000000000 $
+b10000000000000 !
+b1101 "
+b1101 #
